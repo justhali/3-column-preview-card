@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://justhali.github.io/3-column-preview-card/](https://justhali.github.io/3-column-preview-card/)
 
 ### Built with
 
@@ -39,5 +39,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Halima](https://halima-ahmed.netlify.app)
+- Website - [My portfolio](https://halima-ahmed.netlify.app)
 - Frontend Mentor - [@justhali](https://www.frontendmentor.io/profile/justhali)
