@@ -1,0 +1,115 @@
+/* COLORS */
+:root{
+    --bg-orange: hsl(31, 77%, 52%); 
+    --bg-cyan: hsl(184, 100%, 22%); 
+    --bg-dark-cyan: hsl(179, 100%, 13%); 
+    --text-paragraph: hsla(0, 0%, 100%, 0.75);
+    --text-highlight: hsl(0, 0%, 95%);
+}
+
+/* QUICK RESET */
+html{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    background-color: var(--text-highlight);
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--text-paragraph);
+}
+a{
+    text-decoration: none;
+}
+/* MAIN CONTENT */
+section{
+    width: 80%;
+    margin: 0 auto; 
+    display: flex;
+    flex-wrap: wrap; 
+}
+.card{
+    min-height: 300px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card.sedans{
+    background-color: var(--bg-orange);
+}
+.card.sedans a{
+    color:var(--bg-orange);
+}
+.card.suvs{
+    background-color: var(--bg-cyan);
+}
+.card.suvs a{
+    color: var(--bg-cyan);
+}
+.card.luxury{
+    background-color: var(--bg-dark-cyan);
+}
+.card.luxury a{
+    color: var(--bg-dark-cyan);
+}
+.card .icon img{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.card .title{
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: var(--text-highlight);
+    font-size: 1.8rem;
+}
+.card .text{
+    line-height: 1.6;
+}
+.card a{
+    width: 87px;;
+    background-color: var(--text-highlight);
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 30px; 
+    padding: 10px 20px;
+    display: inline-block;
+}
+.card a:hover,
+.card a:active{
+    background-color: transparent;
+    border: 0.5px solid var(--text-paragraph);
+    color: var(--text-paragraph)
+}
+
+
+/* MEDIA QUERIES */
+/* 
+*  mobile: 375px
+*  desktop: 1440px
+ */
+ @media screen 
+ and (min-width: 1024px) 
+ and (max-width: 1439px){
+    .card{
+         width: 33.333%;
+    }
+}
+
+@media  screen and (min-width: 1440px) {
+    
+    section{
+        width: 45%;
+        flex-wrap: nowrap;
+    }
+    .card{
+        height: 450px;
+    }
+    .card .text{
+        line-height: 1.8;
+    }
+}
